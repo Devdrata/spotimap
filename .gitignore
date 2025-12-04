@@ -4,3 +4,5 @@
 "*.pyc" 
 ".env" 
 "firebase-key.json" 
+.vercel
+.env*.local

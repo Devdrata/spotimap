@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/api.py" }
+    { "source": "/api/(.*)", "destination": "/api/api.js" }
   ],
   "buildCommand": "cd spotifymap-frontend && npm install && npm run build",
   "outputDirectory": "spotifymap-frontend/dist",

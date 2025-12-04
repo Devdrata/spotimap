@@ -1,6 +1,0 @@
-Flask
-flask-cors
-spotipy
-python-dotenv
-firebase-admin
-pygeohash

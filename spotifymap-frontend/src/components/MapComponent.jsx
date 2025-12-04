@@ -6,10 +6,9 @@ import axios from 'axios';
 import useSWR from 'swr';
 
 // Automatically use '/api' in production, or localhost in development
-const BACKEND_URL = import.meta.env.PROD
-    ? '/api'
-    : 'http://127.0.0.1:5000';
-
+const BACKEND_URL = import.meta.env.PROD 
+  ? '/api' // Production uses relative path
+  : 'http://127.0.0.1:5000'; // Development uses absolute path
 // --- FETCHERS ---
 const fetcherGet = (url) => axios.get(url, { withCredentials: true }).then((res) => res.data);
 const fetcherPost = ([url, lat, lon, rad]) =>

@@ -1,10 +1,9 @@
 ﻿import React from 'react';
 
 // Automatically use '/api' in production, or localhost in development
-const BACKEND_URL = import.meta.env.PROD
-    ? '/api'
-    : 'http://127.0.0.1:5000';
-
+const BACKEND_URL = import.meta.env.PROD 
+  ? '/api' // Production uses relative path
+  : 'http://127.0.0.1:5000'; // Development uses absolute path
 const LoginButton = () => {
     const handleLogin = () => {
         window.location.href = `${BACKEND_URL}/login`;
