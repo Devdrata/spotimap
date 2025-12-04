@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.py" }
+  ],
+  "buildCommand": "cd spotifymap-frontend && npm install && npm run build",
+  "outputDirectory": "spotifymap-frontend/dist",
+  "framework": "vite"
+}

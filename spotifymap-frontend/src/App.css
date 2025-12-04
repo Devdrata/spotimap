@@ -1,0 +1,282 @@
+/* src/App.css */
+:root {
+    --spotify-green: #1DB954;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    --text-color: #ffffff;
+    --panel-bg: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode {
+    background-color: #e0e0e0;
+    --text-color: #121212;
+    --panel-bg: rgba(255, 255, 255, 0.4);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    overflow: hidden;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PANEL */
+.glass-panel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: var(--panel-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--glass-shadow);
+    color: var(--text-color);
+    max-width: 300px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TOGGLE */
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+input:checked + .slider {
+    background-color: var(--spotify-green);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--spotify-green);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* PINS */
+.custom-pin {
+    background: transparent;
+}
+
+.pin-outer {
+    width: 50px;
+    height: 50px;
+    background: rgba(29, 185, 84, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    border: 2px solid var(--spotify-green);
+    box-shadow: 0 0 15px var(--spotify-green);
+    animation: pulse 2s infinite;
+}
+
+.pin-inner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+    .pin-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(29, 185, 84, 0.7);
+        transform: scale(0.95);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(29, 185, 84, 0);
+        transform: scale(1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 185, 84, 0);
+        transform: scale(0.95);
+    }
+}
+
+/* POPUPS */
+.leaflet-popup-content-wrapper {
+    background: rgba(20, 20, 20, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.leaflet-popup-tip {
+    background: rgba(20, 20, 20, 0.85) !important;
+}
+
+.leaflet-popup-content {
+    margin: 15px;
+    text-align: center;
+    font-family: 'Circular', sans-serif;
+}
+
+/* ALBUM ART WITH GLOW */
+.popup-art {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .popup-art:hover {
+        box-shadow: 0 0 20px var(--spotify-green);
+        transform: scale(1.05);
+    }
+
+/* --- FOLLOW BUTTON FIX --- */
+.follow-btn,
+.follow-btn:visited,
+.follow-btn:hover,
+.follow-btn:active {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--spotify-green);
+    /* FORCE WHITE TEXT */
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+    .follow-btn:hover {
+        transform: scale(1.05);
+        background-color: #1ed760;
+        box-shadow: 0 0 15px rgba(29, 185, 84, 0.6);
+        color: #ffffff !important; /* Ensure it stays white on hover */
+    }
+/* LOGIN */
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+}
+
+.login-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.toggle-btn {
+    background: var(--spotify-green);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+    .toggle-btn:hover {
+        transform: scale(1.05);
+    }
+/* src/App.css */
+/* Add this new block to your existing CSS file */
+
+/* --- ARTIST LINK STYLE --- */
+.artist-link {
+    color: var(--spotify-green);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+    .artist-link:hover {
+        color: #1ed760;
+        text-decoration: underline;
+        text-shadow: 0 0 8px rgba(29, 185, 84, 0.4);
+    }
+
+/* ... (Keep all previous CSS below) ... */

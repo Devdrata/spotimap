@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|solutionrelative:spotifymap-frontend\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\LoginButton.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|solutionrelative:spotifymap-frontend\\src\\components\\LoginButton.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\MapComponent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|solutionrelative:spotifymap-frontend\\src\\components\\MapComponent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\api\\index.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|solutionrelative:api\\index.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D3BE5F24-F86C-4175-AC70-CF01E688C6DB}|SpotiMap.pyproj|solutionrelative:spotifymap-frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.py",
+              "DocumentMoniker": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\api\\index.py",
+              "RelativeDocumentMoniker": "api\\index.py",
+              "ToolTip": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\api\\index.py",
+              "RelativeToolTip": "api\\index.py",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAowCMBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-04T00:31:50.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\App.css",
+              "RelativeDocumentMoniker": "spotifymap-frontend\\src\\App.css",
+              "ToolTip": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\App.css",
+              "RelativeToolTip": "spotifymap-frontend\\src\\App.css",
+              "ViewState": "AgIAAAABAAAAAAAAAAAowAcBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-03T22:50:17.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\vite.config.js",
+              "RelativeDocumentMoniker": "spotifymap-frontend\\vite.config.js",
+              "ToolTip": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\vite.config.js",
+              "RelativeToolTip": "spotifymap-frontend\\vite.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T22:48:22.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapComponent.jsx",
+              "DocumentMoniker": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\MapComponent.jsx",
+              "RelativeDocumentMoniker": "spotifymap-frontend\\src\\components\\MapComponent.jsx",
+              "ToolTip": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\MapComponent.jsx",
+              "RelativeToolTip": "spotifymap-frontend\\src\\components\\MapComponent.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-03T22:09:49.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginButton.jsx",
+              "DocumentMoniker": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\LoginButton.jsx",
+              "RelativeDocumentMoniker": "spotifymap-frontend\\src\\components\\LoginButton.jsx",
+              "ToolTip": "C:\\Users\\Aryan Tyagi\\Desktop\\SpotiMap\\SpotiMap\\spotifymap-frontend\\src\\components\\LoginButton.jsx",
+              "RelativeToolTip": "spotifymap-frontend\\src\\components\\LoginButton.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-03T22:09:36.001Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
